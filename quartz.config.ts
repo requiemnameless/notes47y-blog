@@ -8,16 +8,16 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
-    pageTitleSuffix: "",
+    pageTitle: "Notes47y",
+    pageTitleSuffix: " | 知識管理與 AI 協作",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    locale: "zh-TW",
+    baseUrl: "notes47y.pages.dev",
+    ignorePatterns: ["private", "templates", ".obsidian", "00_Inbox", "90_Archive", "doc"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
@@ -88,8 +88,8 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      // Comment out CustomOgImages to speed up build time
-      Plugin.CustomOgImages(),
+      // Comment out CustomOgImages to speed up build time and avoid emoji rendering errors
+      // Plugin.CustomOgImages(),
     ],
   },
 }
