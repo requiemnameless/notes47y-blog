@@ -9,12 +9,10 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "Notes47y",
-    pageTitleSuffix: " | 知識管理與 AI 協作",
+    pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    analytics: null,
     locale: "zh-TW",
     baseUrl: "notes47y.pages.dev",
     ignorePatterns: ["private", "templates", ".obsidian", "00_Inbox", "90_Archive", "doc"],
@@ -81,8 +79,8 @@ const config: QuartzConfig = {
       Plugin.FolderPage(),
       Plugin.TagPage(),
       Plugin.ContentIndex({
-        enableSiteMap: true,
-        enableRSS: true,
+        enableSiteMap: false,
+        enableRSS: false,
       }),
       Plugin.Assets(),
       Plugin.Static(),
