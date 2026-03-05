@@ -15,7 +15,7 @@ const config: QuartzConfig = {
     analytics: null,
     locale: "zh-TW",
     baseUrl: "notes47y.pages.dev",
-    ignorePatterns: ["private", "templates", ".obsidian", "00_Inbox", "90_Archive", "doc"],
+    ignorePatterns: ["templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
@@ -86,8 +86,7 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      // Comment out CustomOgImages to speed up build time and avoid emoji rendering errors
-      // Plugin.CustomOgImages(),
+      Plugin.PrivateHeaders(),
     ],
   },
 }

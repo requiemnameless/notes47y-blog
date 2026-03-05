@@ -66,6 +66,27 @@
 4. 使用你設定的 IdP 登入
 5. 驗證 MFA 後才能存取網站內容
 
+### 7. 保護 Preview 部署（重要）
+
+Cloudflare Pages 的分支預覽部署（`*.notes47y.pages.dev`）**不會自動受 Access 保護**。
+
+處理方式（擇一）：
+
+1. **Wildcard 保護（推薦）**：在步驟 3 建立 Application 時，新增第二個 domain：
+   - **Application domain**: `*.notes47y.pages.dev`
+   - 這樣所有預覽 URL 也會要求認證
+
+2. **停用預覽部署**：在 Cloudflare Pages 專案設定中，進入 **Settings → Builds & deployments → Preview deployments** → 選擇 **None**
+
+### 8. 快取安全
+
+本專案已透過 `_headers` 檔案設定 `Cache-Control: no-store, private`，確保 CDN 邊緣節點不會快取頁面內容。
+
+如果你使用自訂網域且有啟用 Cloudflare CDN Proxy（橘色雲朵），建議額外確認：
+
+1. 進入 **Caching → Configuration**
+2. 確認 **Browser Cache TTL** 設為 **Respect Existing Headers**
+
 ## 進階設定（可選）
 
 ### 自訂登入頁面外觀
