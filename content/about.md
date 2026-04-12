@@ -7,8 +7,7 @@ summary: "關於 Shawn Cheng 與 notes47y"
 
 ## 嗨，我是 Shawn 👋
 
-<!-- 一句話 Hook：用一句話說你是誰，這個 Blog 存在的意義 -->
-<!-- 範例：「我是 Salesforce 顧問、知識管理實踐者，用 AI Agent 團隊經營這個 Blog。」-->
+notes47y 是一個用 AI Agent 團隊經營的個人品牌實驗室——從選題、研究、寫作到發布，每一個環節都有 AI 參與。這裡記錄的不只是知識，更是一套正在運作中的人機協作系統。
 
 ---
 
@@ -44,5 +43,3 @@ summary: "關於 Shawn Cheng 與 notes47y"
 - X：[@notes47y](https://x.com/notes47y)
 - Threads：[@notes47y](https://threads.net/@notes47y)
 - Instagram：[@notes47y](https://instagram.com/notes47y)
-
-<!-- 之後可以加 Email 或 Telegram -->
