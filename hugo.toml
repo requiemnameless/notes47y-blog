@@ -57,6 +57,17 @@ buildDrafts = false
     name = "rss"
     url = "index.xml"
 
+  [params.assets]
+    favicon = "/favicon.svg"
+    favicon16x16 = "/favicon.svg"
+    favicon32x32 = "/favicon.svg"
+    apple_touch_icon = "/favicon.svg"
+
+  [params.label]
+    text = "notes47y"
+    icon = "/favicon.svg"
+    iconHeight = 28
+
 [taxonomies]
   category = "categories"
   tag = "tags"
@@ -77,6 +88,11 @@ buildDrafts = false
     name = "搜尋"
     url = "/search/"
     weight = 30
+  [[menu.main]]
+    identifier = "about"
+    name = "關於"
+    url = "/about/"
+    weight = 40
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

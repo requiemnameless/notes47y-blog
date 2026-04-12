@@ -1,0 +1,67 @@
+/* notes47y Brand Colors */
+:root {
+  --brand: #4f46e5;
+  --brand-hover: #4338ca;
+}
+
+/* Accent color — links, active states */
+.dark a:hover,
+a:hover {
+  color: var(--brand) !important;
+}
+
+.post-entry:hover .entry-header h2 {
+  color: var(--brand);
+}
+
+/* Nav active link */
+.nav a.active,
+#menu a:hover {
+  color: var(--brand) !important;
+  border-bottom: 2px solid var(--brand);
+}
+
+/* Tags */
+.post-tags a {
+  border: 1px solid var(--brand);
+  color: var(--brand);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.78rem;
+}
+
+.post-tags a:hover {
+  background: var(--brand);
+  color: white !important;
+}
+
+/* Read more link */
+.read-more a {
+  color: var(--brand);
+}
+
+/* Profile social icons hover */
+.social-icons a:hover svg {
+  fill: var(--brand);
+}
+
+/* Code block top border accent */
+.highlight {
+  border-left: 3px solid var(--brand);
+}
+
+/* Table of contents active */
+#TableOfContents a:hover {
+  color: var(--brand);
+}
+
+/* Logo / site title */
+.logo a:hover {
+  color: var(--brand) !important;
+}
+
+/* Post nav links */
+.paginav a:hover {
+  background: var(--brand);
+  color: white;
+}
