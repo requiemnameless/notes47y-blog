@@ -36,12 +36,12 @@ buildDrafts = false
 
   [params.profileMode]
     enabled = true
-    title = "Shawn Cheng"
+    title = "Notes47y"
     subtitle = "AI 協作 × 知識管理 × Salesforce｜用真實踩坑經驗取代教科書式說明"
-    imageUrl = "/images/avatar.png"
-    imageWidth = 120
+    imageUrl = "/images/logo.png"
+    imageWidth = 220
     imageHeight = 120
-    imageTitle = "Shawn Cheng"
+    imageTitle = "Notes47y"
 
   [params.homeInfoParams]
     Title = "嗨，我是 Shawn 👋"
@@ -75,7 +75,7 @@ buildDrafts = false
 
   [params.label]
     text = "notes47y"
-    icon = "/favicon.svg"
+    icon = "/images/logo.png"
     iconHeight = 28
 
 [taxonomies]
