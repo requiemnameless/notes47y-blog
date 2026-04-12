@@ -38,8 +38,8 @@ buildDrafts = false
     enabled = true
     title = "Notes47y"
     subtitle = "AI 協作 × 知識管理 × Salesforce｜用真實踩坑經驗取代教科書式說明"
-    imageUrl = "/images/logo.png"
-    imageWidth = 220
+    imageUrl = "/images/avatar.png"
+    imageWidth = 120
     imageHeight = 120
     imageTitle = "Notes47y"
 
