@@ -4,6 +4,12 @@
   --brand-hover: #0e7490;
 }
 
+/* 移除 Profile Mode 的全屏撐高，緊貼頂部 */
+.profile {
+  min-height: unset !important;
+  padding: 20px 0 10px;
+}
+
 
 /* Accent color — links, active states */
 .dark a:hover,
