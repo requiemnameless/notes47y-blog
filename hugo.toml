@@ -11,6 +11,7 @@ buildDrafts = false
   env = "production"
   title = "Notes47y"
   mainSections = ["posts"]
+
   description = "AI 協作、知識管理與 Salesforce 技術的實踐筆記。分享真實工作流、踩坑心得與深度洞察。"
   keywords = ["AI 協作", "知識管理", "Zettelkasten", "Salesforce", "Claude Code", "Obsidian"]
   author = "Shawn Cheng"
