@@ -5,6 +5,10 @@ description: "回顧 2025 年，AI 協作經歷了四個革命性轉折。從 Cl
 tags: [AI協作, Claude Code, MCP, Subagents, Skills, 開發工作流程, 2025回顧]
 categories: [AI協作]
 draft: false
+cover:
+  image: /images/covers/2025-ai-collab.webp
+  alt: "2025 AI 協作四大轉折點封面"
+  relative: false
 ---
 
 # 從指令到協作：重塑開發典範的 2025 年 AI 協作四大轉折點

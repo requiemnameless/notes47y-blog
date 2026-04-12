@@ -1,7 +1,7 @@
-/* notes47y Brand Colors */
+/* notes47y Brand Colors — teal/cyan matching N47Y logo */
 :root {
-  --brand: #4f46e5;
-  --brand-hover: #4338ca;
+  --brand: #0891b2;
+  --brand-hover: #0e7490;
 }
 
 /* Accent color — links, active states */

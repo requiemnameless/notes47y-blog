@@ -4,6 +4,10 @@ date: 2026-04-09
 tags: ["知識管理", "Zettelkasten", "PKM", "AI協作"]
 description: "用 Zettelkasten 在 Obsidian 記了一年筆記：123 則永久筆記、30 個主題地圖、數百個原子化概念。這篇誠實說什麼有效（原子化思考、MOC 導覽）、什麼是陷阱（連結過度工程化、格式完美主義），以及 AI 工具如何從根本改變 PKM 系統的運作方式。"
 draft: false
+cover:
+  image: /images/covers/zettelkasten-one-year-review.webp
+  alt: "Zettelkasten 一年回顧封面"
+  relative: false
 ---
 
 # 我的 Zettelkasten 實踐：一年後的回顧

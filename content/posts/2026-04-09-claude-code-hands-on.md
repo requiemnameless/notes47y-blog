@@ -4,6 +4,10 @@ date: 2026-04-09
 tags: ["Claude Code", "AI協作", "開發工具", "實戰"]
 description: "用了三個月 Claude Code 之後的真實心得：它不是更聰明的 Copilot，而是一種完全不同的人機協作方式。這篇整理 CLAUDE.md 設計、Plan Mode、Subagent 並行任務、Hooks 自動化、Permission Mode 的實戰經驗，以及最容易踩到的上下文管理陷阱。"
 draft: false
+cover:
+  image: /images/covers/claude-code-hands-on.webp
+  alt: "Claude Code 實戰封面"
+  relative: false
 ---
 
 三個月前，我抱著「又一個 AI 工具試試看」的心態打開 Claude Code CLI。三個月後，它已經成為我每天工作流程的核心。不是因為它完美，而是因為它改變了我思考「人機協作」的方式。

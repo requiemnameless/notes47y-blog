@@ -4,6 +4,10 @@ date: 2026-04-09
 tags: ["忠誠度", "LCC", "航空", "商業分析"]
 description: "全球頭部航空公司帳上背負超過 US$300 億的點數負債，低成本航空的忠誠計畫卻只能影響旅客決策的 15%。三重詛咒（低頻次、高沉睡率、低附加收入）讓傳統忠誠模型結構性失效。這篇分析 AirAsia、easyJet、虎航三種突圍模式與 12% 法則。"
 draft: false
+cover:
+  image: /images/covers/lcc-loyalty-economics.webp
+  alt: "LCC 會員經濟學封面"
+  relative: false
 ---
 
 # LCC 會員經濟學：低成本航空的忠誠度戰爭
