@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "zh-TW",
-    baseUrl: "notes47y.pages.dev",
+    baseUrl: "blog.notes47y.win",
     ignorePatterns: ["private", "templates", ".obsidian", "00_Inbox", "90_Archive", "doc"],
     defaultDateType: "modified",
     theme: {
