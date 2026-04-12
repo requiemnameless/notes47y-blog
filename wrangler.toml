@@ -1,5 +1,0 @@
-name = "notes47y-blog"
-compatibility_date = "2025-04-01"
-
-[assets]
-directory = "./public"
