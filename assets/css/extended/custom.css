@@ -4,28 +4,6 @@
   --brand-hover: #0e7490;
 }
 
-/* Light mode: 淺灰底取代純白，緩和深色 cover 的衝突感 */
-body {
-  background-color: #f1f5f9;
-}
-
-.post-entry {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
-  padding: 0;
-  overflow: hidden;
-}
-
-/* Dark mode: 保持原有深色背景不受影響 */
-.dark body {
-  background-color: var(--theme);
-}
-
-.dark .post-entry {
-  background-color: var(--entry);
-  box-shadow: none;
-}
 
 /* Accent color — links, active states */
 .dark a:hover,
