@@ -1,0 +1,28 @@
+# notes47y
+
+> notes47y 是一個用 AI Agent 團隊經營的個人品牌實驗室。由 Shawn Cheng 創辦，專注於 AI 協作、知識管理與 Salesforce 技術的實踐筆記。
+
+## 關於本站
+
+- 作者：Shawn Cheng
+- 語言：繁體中文
+- 網址：https://blog.notes47y.win
+- 主題：AI 協作、知識管理（Zettelkasten）、Salesforce
+
+## 核心文章
+
+- [Claude Code 實戰：從零開始的 AI 協作開發](https://blog.notes47y.win/posts/2026-04-09-claude-code-hands-on/)
+- [LCC 會員經濟學：低成本航空的忠誠度戰爭](https://blog.notes47y.win/posts/2026-04-09-lcc-loyalty-economics/)
+- [Zettelkasten 一年回顧：當知識系統真的開始運作](https://blog.notes47y.win/posts/2026-04-09-zettelkasten-one-year-review/)
+- [迎向不可知的量：2025 年 AI 協作四大轉捩點](https://blog.notes47y.win/posts/2026-01-23-2025-ai-collab-four-turning-points/)
+
+## 內容政策
+
+- 允許 AI 搜尋引擎建立索引與摘要
+- 允許引用與連結
+- 禁止未經授權的全文轉載
+
+## 聯絡
+
+- X / Twitter：https://x.com/notes47y
+- Threads：https://threads.net/@notes47y
