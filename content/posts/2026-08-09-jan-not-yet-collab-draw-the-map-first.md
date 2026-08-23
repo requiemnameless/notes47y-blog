@@ -4,6 +4,10 @@ date: 2026-08-09
 tags: ["AI協作", "Claude Code", "Org Migration", "實戰", "泳道圖", "剛開始跟AI協作"]
 description: "2026 年 1 月還稱不上跟 AI 協作：用 Skill／Agent 產 WBS、自製泳道圖，二十四週四個人第一週就亮紅燈。先有同一張圖，才有後面的協作。"
 draft: false
+cover:
+  image: /images/covers/jan-not-yet-collab.webp
+  alt: "泳道圖：四條平行軌道只亮第一段"
+  relative: false
 ---
 
 2026 年 1 月的時候，我還沒搞清楚「跟 AI 協作」是什麼。

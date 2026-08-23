@@ -5,6 +5,10 @@ description: "所有人都在談 AI 能做什麼，很少人談它「不能用�
 tags: [AI協作, 故障排除, 容量規劃, 維運, 風險管理]
 categories: [AI協作]
 draft: false
+cover:
+  image: /images/covers/model-quota-outage-48min.webp
+  alt: "一排伺服器柱，中央一座正在熄滅"
+  relative: false
 ---
 
 ## 前言：沒有人準備「它不能用」的那一刻

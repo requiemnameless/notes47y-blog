@@ -5,6 +5,10 @@ description: "用 AI 交付一件真實的東西，跟用 AI 寫一段程式碼�
 tags: [AI協作, 交付管理, 工作流程, Claude Code, 專案管理, 方法論]
 categories: [AI協作]
 draft: false
+cover:
+  image: /images/covers/ai-delivery-chain-five-stages.webp
+  alt: "光束穿過三道閘門收束成序"
+  relative: false
 ---
 
 ## 前言：能寫程式碼，不等於能交付
