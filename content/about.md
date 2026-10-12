@@ -5,6 +5,18 @@ url: "/about/"
 summary: "關於 Shawn Cheng 與 notes47y"
 ---
 
+## About Notes47y (English)
+
+Notes47y is a one-person AI studio based in Taiwan, founded in February 2026 by Shawn Cheng.
+
+We build MAGI, a self-hosted multi-agent system on Claude that runs a knowledge base, a task board and scheduled automations. We use it to speed up Salesforce consulting work (migration planning, issue triage, client reports) and publish what we learn on this blog.
+
+- Founder: Shawn Cheng
+- Contact: shaw@notes47y.win
+- Website: https://notes47y.win
+
+---
+
 ## 嗨，我是 Shawn 👋
 
 notes47y 是一個用 AI Agent 團隊經營的個人品牌實驗室——從選題、研究、寫作到發布，每一個環節都有 AI 參與。這裡記錄的不只是知識，更是一套正在運作中的人機協作系統。
