@@ -14,7 +14,7 @@ buildDrafts = false
 
   description = "AI 協作、知識管理與 Salesforce 技術的實踐筆記。分享真實工作流、踩坑心得與深度洞察。"
   keywords = ["AI 協作", "知識管理", "Zettelkasten", "Salesforce", "Claude Code", "Obsidian"]
-  author = "Shawn Cheng"
+  author = "Notes47y"
   images = ["/images/og-default.png"]
   DateFormat = "2006-01-02"
   defaultTheme = "auto"
@@ -45,7 +45,7 @@ buildDrafts = false
     imageTitle = "Notes47y"
 
   [params.homeInfoParams]
-    Title = "嗨，我是 Shawn 👋"
+    Title = "嗨，這裡是 Notes47y 👋"
     Content = "分享 AI 協作、知識管理與 Salesforce 的實踐筆記。用真實踩坑經驗取代教科書式說明。"
 
   [[params.socialIcons]]
