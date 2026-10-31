@@ -12,6 +12,7 @@ buildDrafts = false
 [params]
   env = "production"
   title = "Notes47y"
+  homeTitle = "AI 協作與知識管理實踐筆記｜Notes47y"
   mainSections = ["posts"]
 
   description = "AI 協作、知識管理與 Salesforce 技術的實踐筆記。分享真實工作流、踩坑心得與深度洞察。"
@@ -39,7 +40,7 @@ buildDrafts = false
 
   [params.profileMode]
     enabled = true
-    title = "Notes47y"
+    title = "AI 協作與知識管理的實踐筆記"
     subtitle = "AI 協作 × 知識管理 × Salesforce｜用真實踩坑經驗取代教科書式說明"
     imageUrl = "/images/avatar.png"
     imageWidth = 120
