@@ -1,6 +1,7 @@
 baseURL = "https://blog.notes47y.win/"
 languageCode = "zh-TW"
 defaultContentLanguage = "zh-tw"
+hasCJKLanguage = true
 title = "Notes47y"
 theme = "PaperMod"
 [pagination]
