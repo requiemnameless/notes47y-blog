@@ -10,8 +10,6 @@ cover:
   relative: false
 ---
 
-# 我的 Zettelkasten 實踐：一年後的回顧
-
 一年前，我決定認真建立一套 Zettelkasten 系統。
 
 我讀了 Niklas Luhmann 的故事，看了 Obsidian 社群的炫圖，相信自己也能建立一個會自己長出洞見的知識網絡。
