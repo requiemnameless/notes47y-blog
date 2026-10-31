@@ -1,8 +1,24 @@
 {{ if .IsHome }}
+{{- /* 補 WebSite schema；欄位全部取自既有站點設定。搜尋頁不支援 ?q= 參數，故不宣告 SearchAction */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": {{ printf "%s#website" site.Home.Permalink }},
+  "name": {{ site.Title }},
+  "url": {{ site.Home.Permalink }},
+  "description": {{ site.Params.description | plainify | truncate 180 | safeHTML }},
+  "inLanguage": {{ site.Language.Lang }},
+  "publisher": {
+    "@id": {{ printf "%s#publisher" site.Home.Permalink }}
+  }
+}
+</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "{{- ( site.Params.schema.publisherType | default "Organization") | title -}}",
+  "@id": {{ printf "%s#publisher" site.Home.Permalink }},
   "name": {{ site.Title }},
   "url": {{ site.Home.Permalink }},
   "description": {{ site.Params.description | plainify | truncate 180 | safeHTML }},
@@ -15,7 +31,8 @@
     {{- if site.Params.schema.sameAs }}
       {{ range $i, $e := site.Params.schema.sameAs }}{{ if $i }}, {{ end }}{{ trim $e " " }}{{ end }}
     {{- else}}
-      {{ range $i, $e := site.Params.SocialIcons }}{{ if $i }}, {{ end }}{{ trim $e.url " " | safeURL }}{{ end }}
+      {{- /* 排除 rss 圖示：它的 url 是相對路徑 index.xml，不是社群帳號 */}}
+      {{ range $i, $e := where site.Params.SocialIcons "name" "ne" "rss" }}{{ if $i }}, {{ end }}{{ trim $e.url " " | safeURL }}{{ end }}
     {{- end}}
   ]
 }
