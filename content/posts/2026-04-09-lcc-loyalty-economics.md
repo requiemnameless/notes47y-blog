@@ -10,8 +10,6 @@ cover:
   relative: false
 ---
 
-# LCC 會員經濟學：低成本航空的忠誠度戰爭
-
 ## 一個讓人不安的數字
 
 全球前六大航空公司，帳上合計背負約 US$300 億（約 NT$9,600 億）的點數負債（數字根據 American Airlines、Delta、United、Lufthansa、Air France-KLM、IAG 各 2024 年報加總估算；各來源因計算方式不同略有差異）。
