@@ -1,6 +1,6 @@
 ---
 # 標籤總覽與各標籤頁：不進 sitemap、noindex（保留 follow）
-title: "Tags"
+title: "標籤"
 sitemap:
   disable: true
 robotsNoIndex: true
