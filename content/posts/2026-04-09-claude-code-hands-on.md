@@ -10,6 +10,8 @@ cover:
   relative: false
 ---
 
+這篇是用了三個月 Claude Code 之後的實戰心得，整理 CLAUDE.md 設計、Plan Mode、Subagent 並行任務、Hooks 自動化與 Permission Mode，以及最容易踩到的上下文管理陷阱。
+
 三個月前，我抱著「又一個 AI 工具試試看」的心態打開 Claude Code CLI。三個月後，它已經成為我每天工作流程的核心。不是因為它完美，而是因為它改變了我思考「人機協作」的方式。
 
 這篇文章不是功能介紹，是我真實踩過的坑和摸索出的工作節奏。如果你在考慮要不要花時間深入學 Claude Code，希望這些心得能讓你少走一些彎路。
