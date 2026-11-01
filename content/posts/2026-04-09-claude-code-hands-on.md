@@ -2,7 +2,7 @@
 title: "Claude Code 實戰：從零開始的 AI 協作開發"
 date: 2026-04-09
 tags: ["Claude Code", "AI協作", "開發工具", "實戰"]
-description: "用了三個月 Claude Code 之後的真實心得：它不是更聰明的 Copilot，而是一種完全不同的人機協作方式。這篇整理 CLAUDE.md 設計、Plan Mode、Subagent 並行任務、Hooks 自動化、Permission Mode 的實戰經驗，以及最容易踩到的上下文管理陷阱。"
+description: "用了三個月 Claude Code 的實戰心得：CLAUDE.md 設計、Plan Mode、Subagent 並行任務、Hooks 自動化、Permission Mode，以及最容易踩到的上下文管理陷阱。"
 draft: false
 cover:
   image: /images/covers/claude-code-hands-on.webp

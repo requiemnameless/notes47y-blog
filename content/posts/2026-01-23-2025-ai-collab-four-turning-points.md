@@ -1,7 +1,7 @@
 ---
 title: "從指令到協作：重塑開發典範的 2025 年 AI 協作四大轉折點"
 date: 2026-01-23
-description: "回顧 2025 年，AI 協作經歷了四個革命性轉折。從 Claude Code 的專案級上下文感知、MCP 的外部工具串接、Subagents 的專家代理，到 Skills 的自主判斷，我們正從「操作員」轉型為「決策指揮官」。"
+description: "回顧 2025 年 AI 協作的四個轉折：Claude Code 的專案級上下文感知、MCP 的外部工具串接、Subagents 的專家代理，到 Skills 的自主判斷。"
 tags: [AI協作, Claude Code, MCP, Subagents, Skills, 開發工作流程, 2025回顧]
 categories: [AI協作]
 draft: false
