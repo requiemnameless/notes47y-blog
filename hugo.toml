@@ -42,6 +42,7 @@ buildDrafts = false
     enabled = true
     title = "AI 協作與知識管理的實踐筆記"
     subtitle = "AI 協作 × 知識管理 × Salesforce｜用真實踩坑經驗取代教科書式說明"
+    definition = "Notes47y 是分享 AI 協作、知識管理與 Salesforce 筆記與觀察的部落格，把實際動手時的做法、踩過的坑和想通的事整理成文章。"
     imageUrl = "/images/avatar.png"
     imageWidth = 120
     imageHeight = 120
