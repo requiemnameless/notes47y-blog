@@ -10,6 +10,8 @@ cover:
   relative: false
 ---
 
+這篇回顧在 Obsidian 用 Zettelkasten 記了一年的筆記（123 則永久筆記、30 個主題地圖），誠實說明什麼有效、什麼是陷阱，以及 AI 如何改變這套系統。
+
 一年前，我決定認真建立一套 Zettelkasten 系統。
 
 我讀了 Niklas Luhmann 的故事，看了 Obsidian 社群的炫圖，相信自己也能建立一個會自己長出洞見的知識網絡。
