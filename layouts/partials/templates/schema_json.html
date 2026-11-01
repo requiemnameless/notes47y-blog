@@ -131,9 +131,12 @@
     "@type": "WebPage",
     "@id": {{ .Permalink | safeHTML }}
   },
+  {{- /* publisher 用首頁 Organization 的同一個 @id，讓搜尋引擎把文章與站點實體連起來 */}}
   "publisher": {
     "@type": "{{- ( site.Params.schema.publisherType | default "Organization") | title -}}",
+    "@id": {{ printf "%s#publisher" site.Home.Permalink }},
     "name": {{ site.Title }},
+    "url": {{ site.Home.Permalink }},
     "logo": {
       "@type": "ImageObject",
       "url": {{ site.Params.assets.favicon | default "favicon.ico" | absURL }}
