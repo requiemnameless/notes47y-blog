@@ -1,17 +1,18 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-{{- /* 覆寫 PaperMod：robotsNoIndex 的頁面（搜尋、標籤）用 noindex, follow，讓爬蟲仍能沿連結找到文章 */}}
+{{- /* 覆寫 PaperMod：robotsNoIndex 的頁面（搜尋、標籤）與 404 頁用 noindex, follow，讓爬蟲仍能沿連結找到文章 */}}
 {{- if not (hugo.IsProduction | or (eq site.Params.env "production")) }}
 <meta name="robots" content="noindex, nofollow">
-{{- else if eq .Params.robotsNoIndex true }}
+{{- else if or (eq .Params.robotsNoIndex true) (eq .Kind "404") }}
 <meta name="robots" content="noindex, follow">
 {{- else }}
 <meta name="robots" content="index, follow">
 {{- end }}
 
 {{- /* Title */}}
-<title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ site.Title }}</title>
+{{- /* 覆寫 PaperMod：首頁可用 params.homeTitle 指定帶主題詞的 title，其他頁維持「頁名 | 站名」 */}}
+<title>{{ if .IsHome }}{{ site.Params.homeTitle | default site.Title }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}{{ end }}</title>
 
 {{- /* Meta */}}
 {{- if .IsHome }}

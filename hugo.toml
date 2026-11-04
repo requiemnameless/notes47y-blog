@@ -12,12 +12,14 @@ buildDrafts = false
 [params]
   env = "production"
   title = "Notes47y"
+  homeTitle = "AI 協作與知識管理實踐筆記｜Notes47y"
   mainSections = ["posts"]
 
   description = "AI 協作、知識管理與 Salesforce 技術的實踐筆記。分享真實工作流、踩坑心得與深度洞察。"
   keywords = ["AI 協作", "知識管理", "Zettelkasten", "Salesforce", "Claude Code", "Obsidian"]
   author = "Notes47y"
-  images = ["/images/og-default.png"]
+  # 預設分享圖：原本指向的 og-default.png 不存在（404），改用既有的 600×600 頭像
+  images = ["/images/avatar.png"]
   DateFormat = "2006-01-02"
   defaultTheme = "auto"
   disableThemeToggle = false
@@ -39,8 +41,9 @@ buildDrafts = false
 
   [params.profileMode]
     enabled = true
-    title = "Notes47y"
+    title = "AI 協作與知識管理的實踐筆記"
     subtitle = "AI 協作 × 知識管理 × Salesforce｜用真實踩坑經驗取代教科書式說明"
+    definition = "Notes47y 是分享 AI 協作、知識管理與 Salesforce 筆記與觀察的部落格，把實際動手時的做法、踩過的坑和想通的事整理成文章。"
     imageUrl = "/images/avatar.png"
     imageWidth = 120
     imageHeight = 120

@@ -2,13 +2,15 @@
 title: "我的 Zettelkasten 實踐：一年後的回顧"
 date: 2026-04-09
 tags: ["知識管理", "Zettelkasten", "PKM", "AI協作"]
-description: "用 Zettelkasten 在 Obsidian 記了一年筆記：123 則永久筆記、30 個主題地圖、數百個原子化概念。這篇誠實說什麼有效（原子化思考、MOC 導覽）、什麼是陷阱（連結過度工程化、格式完美主義），以及 AI 工具如何從根本改變 PKM 系統的運作方式。"
+description: "用 Zettelkasten 在 Obsidian 記了一年筆記（123 則永久筆記、30 個主題地圖）：什麼有效、什麼是陷阱，以及 AI 工具如何改變 PKM 系統的運作方式。"
 draft: false
 cover:
   image: /images/covers/zettelkasten-one-year-review.webp
   alt: "Zettelkasten 一年回顧封面"
   relative: false
 ---
+
+這篇回顧在 Obsidian 用 Zettelkasten 記了一年的筆記（123 則永久筆記、30 個主題地圖），誠實說明什麼有效、什麼是陷阱，以及 AI 如何改變這套系統。
 
 一年前，我決定認真建立一套 Zettelkasten 系統。
 
@@ -92,7 +94,7 @@ Inbox 成了另一個「有趣的事」資料夾，只是格式更整齊。
 
 ### 2. 跨領域連結是意外的驚喜
 
-我不可能在寫筆記的當下就知道哪兩個想法未來會有關聯。但當系統幫我把「[LCC 忠誠度計畫的高沉睡率](/posts/lcc-loyalty-economics)」和「知識管理 Inbox 堆積問題」放在一起，我看到了一個共同的結構：
+我不可能在寫筆記的當下就知道哪兩個想法未來會有關聯。但當系統幫我把「LCC 忠誠度計畫的高沉睡率」和「知識管理 Inbox 堆積問題」放在一起，我看到了一個共同的結構：
 
 **當進料速度超過消化速度，任何系統都會累積「名義上擁有但實際上沒有用」的資產。**
 
@@ -140,7 +142,7 @@ Zettelkasten 需要定期的「整理」：把 Inbox 的素材提煉成永久筆
 
 ### Claude Code 成為系統的一部分
 
-我現在在 Obsidian 的專案根目錄有一個 `_llm_index.md`，是專門為 AI 設計的 Vault 導覽文件。它告訴 Claude：Vault 的結構、MOC 的主題分類、Zettelkasten 的時間分布。（關於如何讓 [Claude Code](/posts/claude-code-hands-on) 讀懂你的專案，CLAUDE.md 是另一個同樣重要的設計——原理是一樣的：給 AI 一份「說明書」。）
+我現在在 Obsidian 的專案根目錄有一個 `_llm_index.md`，是專門為 AI 設計的 Vault 導覽文件。它告訴 Claude：Vault 的結構、MOC 的主題分類、Zettelkasten 的時間分布。（關於如何讓 [Claude Code]({{< relref "2026-04-09-claude-code-hands-on.md" >}}) 讀懂你的專案，CLAUDE.md 是另一個同樣重要的設計——原理是一樣的：給 AI 一份「說明書」。）
 
 當我要寫文章或做研究，Claude 可以直接參照這份索引快速找到相關筆記，而不需要我一一指定。
 
