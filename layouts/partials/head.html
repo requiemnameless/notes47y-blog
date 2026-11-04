@@ -11,7 +11,8 @@
 {{- end }}
 
 {{- /* Title */}}
-<title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ site.Title }}</title>
+{{- /* 覆寫 PaperMod：首頁可用 params.homeTitle 指定帶主題詞的 title，其他頁維持「頁名 | 站名」 */}}
+<title>{{ if .IsHome }}{{ site.Params.homeTitle | default site.Title }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}{{ end }}</title>
 
 {{- /* Meta */}}
 {{- if .IsHome }}
