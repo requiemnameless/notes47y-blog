@@ -6,7 +6,7 @@ description: "剛開始用 AI 的時候還稱不上協作：先讓 Agent 產工�
 draft: false
 cover:
   image: /images/covers/jan-not-yet-collab.webp
-  alt: "泳道圖：四條平行軌道只亮第一段"
+  alt: "泳道圖：幾條平行軌道，只有第一段亮起"
   relative: false
 ---
 
