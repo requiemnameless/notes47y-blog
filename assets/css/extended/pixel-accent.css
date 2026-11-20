@@ -1,0 +1,97 @@
+/* pixel-accent: a light pixel nod to shelf.notes47y.win/cloud-loading.html
+ *
+ * Source (identical copies on Magi):
+ *   /home/jenh3957/cockpit/www/cloud-loading.html
+ *   /home/jenh3957/workspace/Entropy/quest-board/.scratch/ops/cloud-variants/cloud-loading.html
+ *
+ * Taken from that page, not invented:
+ *   - No pixel webfont (the page uses Palatino for the title and ui-monospace
+ *     plus █ / ▀ block glyphs for the art, plus a 3x5 █ font only for digits).
+ *   - A pixel cloud sampled from the same PUFFS geometry and █ cells.
+ *   - A 4-step, stepped motion (the piece runs at 24 fps; the canvas painter
+ *     also quantises with steps = 3). Honours prefers-reduced-motion, as the
+ *     player holds the first frame when reduced motion is requested.
+ *   - A single stair-step corner, standing in for g.box(..., "round") which
+ *     draws ╭╮╰╯ on the character grid.
+ * Colour stays on the site brand --brand (#0891b2). Body type, size, and
+ * line-height are left alone; Chinese titles are not given a pixel face.
+ */
+
+.logo a::after {
+  content: "";
+  display: inline-block;
+  width: 39px;  /* 13 cells × 3px, beside the 28px logo */
+  height: 24px;
+  flex-shrink: 0;
+  background-color: var(--brand);
+  background-image: linear-gradient(
+    135deg,
+    var(--brand) 40%,
+    color-mix(in srgb, var(--brand) 68%, white) 50%,
+    var(--brand) 60%
+  );
+  background-size: 300% 300%;
+  background-position: 0% 0%;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2013%208%22%20width%3D%2213%22%20height%3D%228%22%20shape-rendering%3D%22crispEdges%22%20fill%3D%22%23000%22%3E%3Crect%20x%3D%224%22%20y%3D%221%22%20width%3D%224%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%223%22%20y%3D%222%22%20width%3D%227%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%223%22%20width%3D%229%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%221%22%20y%3D%224%22%20width%3D%2211%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%221%22%20y%3D%225%22%20width%3D%2211%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%221%22%20y%3D%226%22%20width%3D%2210%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%227%22%20width%3D%229%22%20height%3D%221%22%2F%3E%3C%2Fsvg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2013%208%22%20width%3D%2213%22%20height%3D%228%22%20shape-rendering%3D%22crispEdges%22%20fill%3D%22%23000%22%3E%3Crect%20x%3D%224%22%20y%3D%221%22%20width%3D%224%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%223%22%20y%3D%222%22%20width%3D%227%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%223%22%20width%3D%229%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%221%22%20y%3D%224%22%20width%3D%2211%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%221%22%20y%3D%225%22%20width%3D%2211%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%221%22%20y%3D%226%22%20width%3D%2210%22%20height%3D%221%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%227%22%20width%3D%229%22%20height%3D%221%22%2F%3E%3C%2Fsvg%3E");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo a::after {
+    animation: pixel-cloud-sweep 8s steps(4, end) infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo a::after {
+    animation: none;
+    background-image: none;
+    background-color: var(--brand);
+  }
+}
+
+@keyframes pixel-cloud-sweep {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+/* Stair-step corners instead of the theme's 8px radius, one 4px notch. */
+.post-entry {
+  border-radius: 0;
+  border-color: color-mix(in srgb, var(--brand) 32%, var(--border));
+  clip-path: polygon(
+    4px 0,
+    calc(100% - 4px) 0,
+    100% 4px,
+    100% calc(100% - 4px),
+    calc(100% - 4px) 100%,
+    4px 100%,
+    0 calc(100% - 4px),
+    0 4px
+  );
+}
+
+.post-entry:hover {
+  border-color: color-mix(in srgb, var(--brand) 55%, var(--border));
+}
+
+/* Tags already use the brand outline; square them off to match the cards. */
+.post-tags a {
+  border-radius: 0;
+}
+
+/* Phone: keep the mark small, don't overflow the header, don't change type. */
+@media (max-width: 500px) {
+  .logo a::after {
+    width: 26px;  /* 13 × 2px */
+    height: 16px;
+  }
+}
